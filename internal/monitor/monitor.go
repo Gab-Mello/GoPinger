@@ -18,5 +18,7 @@ func CheckSite(url string) {
 
 	defer resp.Body.Close()
 
+	fmt.Printf("test")
+
 	fmt.Printf("URL: %s | Stats: %d | Reponse time: %v\n", url, resp.StatusCode, duration)
 }
